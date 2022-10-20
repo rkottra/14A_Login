@@ -1,0 +1,27 @@
+<div class="login" *ngIf="!loggedin">
+    <label for="username">Felhasználónév:</label>
+    <br>
+    <input type="text" name="username" 
+                [(ngModel)]="user.username" />
+    <br>
+    <label for="password">Jelszó:</label>
+    <br>
+    <input type="password" name="password"
+                [(ngModel)]="user.password"/>
+    <br>
+    <br>
+    <input type="button" value="Belépés" 
+        (click)="kattint()" />
+</div>
+
+<div class="login" *ngIf="loggedin">
+    <p>Üdv: {{user.username}}</p>
+    <br>
+    <br>
+    <input type="button" value="Kilépés" 
+        (click)="logout()" />
+</div>
+
+<div class="error" *ngIf=" error != '' ">
+    {{error}}
+</div>

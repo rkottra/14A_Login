@@ -1,0 +1,23 @@
+div.login {
+    border: 1px solid gray;
+    background-color: cornflowerblue;
+    width: 180px;
+    height: 130px;
+    margin: 20px;
+    padding: 10px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+div.error {
+    border: 1px solid gray;
+    background-color: tomato;
+    width: 180px;
+    height: 50px;
+    margin: 20px;
+    padding: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;   
+}
