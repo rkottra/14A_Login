@@ -8,8 +8,7 @@ import { UserModel } from '../user.model';
 })
 export class LoginComponent implements OnInit {
 
-  public user:UserModel 
-        = new UserModel();
+  public user:UserModel = new UserModel();
 
   public error: string = "";
   public loggedin: boolean = false;

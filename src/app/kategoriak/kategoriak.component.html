@@ -1,1 +1,14 @@
-<p>kategoriak works!</p>
+
+<div>
+    <input name="kereses" />
+
+    <div class="card" style="width: 18rem;"
+            *ngFor="let termek of termekek">
+        <img class="card-img-top" 
+            [src]="termek.img" />
+        <h2>{{termek.nev}}</h2>
+        <p>{{termek.leiras}}</p>
+        <p>{{termek.ar}}</p>
+        
+    </div>
+</div>

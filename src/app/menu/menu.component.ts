@@ -14,7 +14,7 @@ export class MenuComponent implements OnInit {
     },
     {
       text: "Kategóriák",
-      link: "/kategóriák"
+      link: "/kategoriak"
     },
     {
       text: "Kapcsolat",

@@ -1,7 +1,7 @@
-<nav>
-    <ul>
-        <li *ngFor="let menupont of menupontok">
-            <a [routerLink]="menupont.link">
+<nav class="navbar navbar-expand-lg">
+    <ul class="navbar-nav">
+        <li class="nav-item" *ngFor="let menupont of menupontok">
+            <a class="nav-link"  [routerLink]="menupont.link">
                 {{menupont.text}}
             </a>
         </li>

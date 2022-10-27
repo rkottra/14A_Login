@@ -11,6 +11,7 @@ import { TermekComponent } from './termek/termek.component';
 import { KategoriakComponent } from './kategoriak/kategoriak.component';
 import { MenuComponent } from './menu/menu.component';
 import { FormsModule } from '@angular/forms';
+import { KapcsolatComponent } from './kapcsolat/kapcsolat.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     NyitooldalComponent,
     TermekComponent,
     KategoriakComponent,
-    MenuComponent
+    MenuComponent,
+    KapcsolatComponent
   ],
   imports: [
     BrowserModule,

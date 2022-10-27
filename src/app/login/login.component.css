@@ -1,8 +1,8 @@
 div.login {
     border: 1px solid gray;
     background-color: cornflowerblue;
-    width: 180px;
-    height: 130px;
+    width: 240px;
+    height: 190px;
     margin: 20px;
     padding: 10px;
     position: fixed;
@@ -13,8 +13,8 @@ div.login {
 div.error {
     border: 1px solid gray;
     background-color: tomato;
-    width: 180px;
-    height: 50px;
+    width: 240px;
+    height: 150px;
     margin: 20px;
     padding: 10px;
     position: fixed;
