@@ -1,0 +1,13 @@
+div {
+    width:200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+    float:left;
+}
+
+.piros {
+    background-color: red;
+    color: white;
+}

@@ -7,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NyitooldalComponent implements OnInit {
 
-  constructor() { }
+
+  public erdemjegy:number = 5;
+  public adatszotar: Map<number, string> 
+          = new Map<number, string>();
+
+  constructor() { 
+    this.adatszotar.set(1, "elégtelen");
+    this.adatszotar.set(2, "elégséges");
+    this.adatszotar.set(3, "közepes");
+    this.adatszotar.set(4, "jó");
+    this.adatszotar.set(5, "jeles");
+  }
 
   ngOnInit(): void {
   }

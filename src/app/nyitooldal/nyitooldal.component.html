@@ -1,1 +1,40 @@
-<p>nyitooldal works!</p>
+
+<div [ngSwitch]="erdemjegy">
+    <p *ngFor="let adatelem of adatszotar | keyvalue">
+        <span *ngSwitchCase="adatelem.key">{{adatelem.value | uppercase}}</span>
+    </p>
+</div>
+
+<select [(ngModel)]="erdemjegy">
+    <option *ngFor="let adatelem of adatszotar | keyvalue" [value]="adatelem.key">
+        {{adatelem.key}}
+    </option>
+</select>
+<!--
+<div [ngStyle]="{'background-color':'rgb(200,200,200)'}">
+    ABCDEF
+</div>
+
+
+<div [ngStyle]="{'background-color':'red', 'color':'blue'}">
+    ABCDEF
+</div>
+-->
+
+<div [ngStyle]="{'border-width': erdemjegy+'px'}">
+    ABCDEF
+</div>
+
+<div [ngStyle]="{'border-width.cm': erdemjegy}">
+    ABCDEF
+</div>
+
+<div [ngStyle]="{'background-color': erdemjegy==1?'black':'',
+                            'color': erdemjegy==1?'white':''}">
+    ABCDEF
+</div>
+
+<div [ngClass]="{'piros': erdemjegy==1}">
+    ABCDEF
+</div>
+
