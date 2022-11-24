@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { TermekModel } from '../termek.model';
 
 @Component({
   selector: 'app-termek',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./termek.component.css']
 })
 export class TermekComponent implements OnInit {
+
+  @Input() termek:TermekModel 
+              = new TermekModel();
 
   constructor() { }
 

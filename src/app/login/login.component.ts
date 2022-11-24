@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { UserModel } from '../user.model';
 
 @Component({
@@ -9,9 +9,10 @@ import { UserModel } from '../user.model';
 export class LoginComponent implements OnInit {
 
   public user:UserModel = new UserModel();
-
-  public error: string = "";
   public loggedin: boolean = false;
+
+  @Output() error: EventEmitter<string> = 
+          new EventEmitter<string>();
         
   constructor() { }
 
@@ -20,21 +21,21 @@ export class LoginComponent implements OnInit {
 
   kattint() {
     this.loggedin = false;
-    this.error = "";
+    this.error.emit("");
 
     if (this.user.username == "admin" &&
           this.user.password == "123") {
             
       this.loggedin = true;
     } else {
-      this.error = "Nem megfelelő felhasználónév vagy jelszó!";
+      this.error.emit("Nem megfelelő felhasználónév vagy jelszó!");
     }
   }
 
   logout() {
     this.loggedin = false;
     this.user.password = "";
-    this.error = "";
+    this.error.emit("");
   }
 
 }

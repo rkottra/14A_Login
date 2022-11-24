@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '14A_Login';
+
+  public HibaBeallitas(error: string) {
+    this.e = error;
+  }
+
+  public e: string = "";
 }

@@ -2,9 +2,15 @@
   <app-fejlec></app-fejlec>
   <app-menu></app-menu>
 
-  <app-login></app-login>
+  <app-login (error)="HibaBeallitas($event)">
+  </app-login>
 
   <router-outlet></router-outlet>
 
+  
   <app-lablec></app-lablec>
+  
+  <div class="error" *ngIf=" e != '' ">
+    {{e}}
+  </div>
 </div>

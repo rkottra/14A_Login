@@ -9,15 +9,3 @@ div.login {
     top: 30px;
     right: 30px;
 }
-
-div.error {
-    border: 1px solid gray;
-    background-color: tomato;
-    width: 240px;
-    height: 150px;
-    margin: 20px;
-    padding: 10px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;   
-}
