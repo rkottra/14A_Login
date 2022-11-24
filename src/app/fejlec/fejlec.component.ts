@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-fejlec',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FejlecComponent implements OnInit {
 
-  constructor() { }
+  public kepurl:SafeUrl;
+
+  constructor(private sanitizer:DomSanitizer) { 
+    this.kepurl = sanitizer.bypassSecurityTrustUrl("https://www.logodesign.net/images/home-page-logo-03.png");
+
+  }
 
   ngOnInit(): void {
   }
