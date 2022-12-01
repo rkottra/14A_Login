@@ -1,0 +1,11 @@
+<div>
+    <h2>Kosár</h2>
+    <ul>
+        <li *ngFor="let elem of elemek | keyvalue">
+            {{elem.key.nev}} - 
+            {{elem.value}}
+        </li>
+    </ul>
+    <hr>
+    <span>{{osszeg}}.-Ft</span>
+</div>

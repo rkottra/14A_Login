@@ -12,6 +12,7 @@ import { KategoriakComponent } from './kategoriak/kategoriak.component';
 import { MenuComponent } from './menu/menu.component';
 import { FormsModule } from '@angular/forms';
 import { KapcsolatComponent } from './kapcsolat/kapcsolat.component';
+import { KosarComponent } from './kosar/kosar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { KapcsolatComponent } from './kapcsolat/kapcsolat.component';
     TermekComponent,
     KategoriakComponent,
     MenuComponent,
-    KapcsolatComponent
+    KapcsolatComponent,
+    KosarComponent
   ],
   imports: [
     BrowserModule,
