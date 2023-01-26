@@ -10,13 +10,9 @@ import { TermekModel } from '../termek.model';
 export class KosarComponent implements OnInit {
 
   public elemek:Map<TermekModel, number>;
-  public osszeg:number = 0;
 
-  constructor(private kosarszerviz:KosarService) {
-      this.elemek = 
-        this.kosarszerviz
-          .getKosarbeliElemek();
-
+  constructor(public kosarszerviz:KosarService) {
+      this.elemek = this.kosarszerviz.getKosarbeliElemek();
    }
 
   ngOnInit(): void {
